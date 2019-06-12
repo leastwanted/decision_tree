@@ -1,0 +1,1791 @@
+{
+  "SilverDecisions": "1.1.0",
+  "buildTimestamp": 1544382143568,
+  "savetime": "2019-05-31T01:45:15.585Z",
+  "lng": "en",
+  "viewMode": "twoCriteria",
+  "rule": "max-max",
+  "title": "",
+  "description": "",
+  "format": {
+    "locales": "en",
+    "payoff1": {
+      "style": "currency",
+      "currency": "USD",
+      "currencyDisplay": "symbol",
+      "minimumFractionDigits": 0,
+      "maximumFractionDigits": 2,
+      "useGrouping": true
+    },
+    "payoff2": {
+      "style": "decimal",
+      "currency": "USD",
+      "currencyDisplay": "symbol",
+      "minimumFractionDigits": 0,
+      "maximumFractionDigits": 2,
+      "useGrouping": true
+    },
+    "probability": {
+      "style": "decimal",
+      "minimumFractionDigits": 2,
+      "maximumFractionDigits": 3,
+      "useGrouping": true
+    }
+  },
+  "treeDesigner": {
+    "margin": {
+      "left": 25,
+      "right": 25,
+      "top": 25,
+      "bottom": 25
+    },
+    "scale": 1,
+    "lng": "en",
+    "layout": {
+      "type": "cluster",
+      "nodeSize": 40,
+      "limitNodePositioning": true,
+      "limitTextPositioning": true,
+      "gridHeight": 100,
+      "gridWidth": 195,
+      "edgeSlantWidthMax": 20
+    },
+    "fontFamily": "sans-serif",
+    "fontSize": "12px",
+    "fontWeight": "normal",
+    "fontStyle": "normal",
+    "node": {
+      "strokeWidth": "1px",
+      "optimal": {
+        "stroke": "#006f00",
+        "strokeWidth": "1.5px"
+      },
+      "label": {
+        "fontSize": "1em",
+        "color": "black"
+      },
+      "payoff": {
+        "fontSize": "1em",
+        "color": "black",
+        "negativeColor": "#b60000"
+      },
+      "decision": {
+        "fill": "#ff7777",
+        "stroke": "#660000",
+        "selected": {
+          "fill": "#aa3333"
+        }
+      },
+      "chance": {
+        "fill": "#ffff44",
+        "stroke": "#666600",
+        "selected": {
+          "fill": "#aaaa00"
+        }
+      },
+      "terminal": {
+        "fill": "#44ff44",
+        "stroke": "black",
+        "selected": {
+          "fill": "#00aa00"
+        },
+        "payoff": {
+          "fontSize": "1em",
+          "color": "black",
+          "negativeColor": "#b60000"
+        }
+      }
+    },
+    "edge": {
+      "stroke": "#424242",
+      "strokeWidth": "1.5",
+      "optimal": {
+        "stroke": "#006f00",
+        "strokeWidth": "2.4"
+      },
+      "selected": {
+        "stroke": "#045ad1",
+        "strokeWidth": "3.5"
+      },
+      "label": {
+        "fontSize": "1em",
+        "color": "back"
+      },
+      "payoff": {
+        "fontSize": "1em",
+        "color": "black",
+        "negativeColor": "#b60000"
+      }
+    },
+    "probability": {
+      "fontSize": "1em",
+      "color": "#0000d7"
+    },
+    "title": {
+      "fontSize": "16px",
+      "fontWeight": "bold",
+      "fontStyle": "normal",
+      "color": "#000000",
+      "margin": {
+        "top": 15,
+        "bottom": 10
+      }
+    },
+    "description": {
+      "show": true,
+      "fontSize": "12px",
+      "fontWeight": "bold",
+      "fontStyle": "normal",
+      "color": "#000000",
+      "margin": {
+        "top": 5,
+        "bottom": 10
+      }
+    },
+    "readOnly": false,
+    "disableAnimations": false,
+    "forceFullEdgeRedraw": false,
+    "hideLabels": false,
+    "hidePayoffs": false,
+    "hideProbabilities": false,
+    "raw": false,
+    "payoffNames": [
+      "Profit",
+      "Utility",
+      "Cost",
+      "Effect"
+    ],
+    "maxPayoffsToDisplay": 2
+  },
+  "data": {
+    "code": "u(x) = 1 - exp(-x/2000000)",
+    "expressionScope": {},
+    "trees": [
+      {
+        "computed": {
+          "max-max": {
+            "childrenPayoff": [
+              "450000",
+              "4809849/41275460"
+            ],
+            "combinedPayoff": "499558857/4127546000",
+            "payoff": [
+              "450000",
+              "4809849/41275460"
+            ],
+            "optimal": true
+          },
+          "expected-value-maximization": {
+            "childrenPayoff": [
+              "1000000"
+            ],
+            "payoff": [
+              "1000000"
+            ],
+            "optimal": true
+          },
+          "expected-value-minimization": {
+            "childrenPayoff": [
+              "0"
+            ],
+            "payoff": [
+              "0"
+            ],
+            "optimal": true
+          },
+          "maxi-min": {
+            "childrenPayoff": [
+              "0"
+            ],
+            "payoff": [
+              "0"
+            ],
+            "optimal": true
+          },
+          "maxi-max": {
+            "childrenPayoff": [
+              "3000000"
+            ],
+            "payoff": [
+              "3000000"
+            ],
+            "optimal": true
+          },
+          "mini-min": {
+            "childrenPayoff": [
+              "-1000000"
+            ],
+            "payoff": [
+              "-1000000"
+            ],
+            "optimal": true
+          },
+          "mini-max": {
+            "childrenPayoff": [
+              "0"
+            ],
+            "payoff": [
+              "0"
+            ],
+            "optimal": true
+          },
+          "min-max": {
+            "childrenPayoff": [
+              "450000",
+              "4809849/41275460"
+            ],
+            "combinedPayoff": "462410943/4127546000",
+            "payoff": [
+              "450000",
+              "4809849/41275460"
+            ],
+            "optimal": true
+          },
+          "max-min": {
+            "childrenPayoff": [
+              "0",
+              "0"
+            ],
+            "combinedPayoff": "0",
+            "payoff": [
+              "0",
+              "0"
+            ],
+            "optimal": true
+          },
+          "min-min": {
+            "childrenPayoff": [
+              "0",
+              "0"
+            ],
+            "combinedPayoff": "0",
+            "payoff": [
+              "0",
+              "0"
+            ],
+            "optimal": true
+          }
+        },
+        "childEdges": [
+          {
+            "computed": {
+              "payoff": [
+                "-5000000",
+                "0"
+              ],
+              "max-max": {
+                "probability": 0,
+                "optimal": false
+              },
+              "expected-value-maximization": {
+                "probability": 1,
+                "optimal": true
+              },
+              "expected-value-minimization": {
+                "probability": 0,
+                "optimal": false
+              },
+              "maxi-min": {
+                "probability": 0,
+                "optimal": false
+              },
+              "maxi-max": {
+                "probability": 1,
+                "optimal": true
+              },
+              "mini-min": {
+                "probability": 1,
+                "optimal": true
+              },
+              "mini-max": {
+                "probability": 0,
+                "optimal": false
+              },
+              "min-max": {
+                "probability": 0,
+                "optimal": false
+              },
+              "max-min": {
+                "probability": 0,
+                "optimal": false
+              },
+              "min-min": {
+                "probability": 0,
+                "optimal": false
+              }
+            },
+            "name": "purchase",
+            "payoff": [
+              "-5000000",
+              0
+            ],
+            "childNode": {
+              "computed": {
+                "max-max": {
+                  "childrenPayoff": [
+                    "6000000",
+                    "198621662231/3099865469374"
+                  ],
+                  "combinedPayoff": "11481015846237/154993273468700",
+                  "payoff": [
+                    "1000000",
+                    "198621662231/3099865469374"
+                  ]
+                },
+                "expected-value-maximization": {
+                  "childrenPayoff": [
+                    "6000000"
+                  ],
+                  "payoff": [
+                    "1000000"
+                  ],
+                  "optimal": true
+                },
+                "expected-value-minimization": {
+                  "childrenPayoff": [
+                    "6000000"
+                  ],
+                  "payoff": [
+                    "1000000"
+                  ]
+                },
+                "maxi-min": {
+                  "childrenPayoff": [
+                    "4000000"
+                  ],
+                  "payoff": [
+                    "-1000000"
+                  ]
+                },
+                "maxi-max": {
+                  "childrenPayoff": [
+                    "8000000"
+                  ],
+                  "payoff": [
+                    "3000000"
+                  ],
+                  "optimal": true
+                },
+                "mini-min": {
+                  "childrenPayoff": [
+                    "4000000"
+                  ],
+                  "payoff": [
+                    "-1000000"
+                  ],
+                  "optimal": true
+                },
+                "mini-max": {
+                  "childrenPayoff": [
+                    "8000000"
+                  ],
+                  "payoff": [
+                    "3000000"
+                  ]
+                },
+                "min-max": {
+                  "childrenPayoff": [
+                    "6000000",
+                    "198621662231/3099865469374"
+                  ],
+                  "combinedPayoff": "8381150376863/154993273468700",
+                  "payoff": [
+                    "1000000",
+                    "198621662231/3099865469374"
+                  ]
+                },
+                "max-min": {
+                  "childrenPayoff": [
+                    "6000000",
+                    "198621662231/3099865469374"
+                  ],
+                  "combinedPayoff": "-8381150376863/154993273468700",
+                  "payoff": [
+                    "1000000",
+                    "198621662231/3099865469374"
+                  ]
+                },
+                "min-min": {
+                  "childrenPayoff": [
+                    "6000000",
+                    "198621662231/3099865469374"
+                  ],
+                  "combinedPayoff": "-11481015846237/154993273468700",
+                  "payoff": [
+                    "1000000",
+                    "198621662231/3099865469374"
+                  ]
+                }
+              },
+              "childEdges": [
+                {
+                  "computed": {
+                    "payoff": [
+                      "8000000",
+                      "1603283/2063773"
+                    ],
+                    "probability": "1/2",
+                    "max-max": {
+                      "probability": "1/2"
+                    },
+                    "expected-value-maximization": {
+                      "probability": "1/2",
+                      "optimal": true
+                    },
+                    "expected-value-minimization": {
+                      "probability": "1/2"
+                    },
+                    "maxi-min": {
+                      "probability": 0
+                    },
+                    "maxi-max": {
+                      "probability": 1,
+                      "optimal": true
+                    },
+                    "mini-min": {
+                      "probability": 0,
+                      "optimal": false
+                    },
+                    "mini-max": {
+                      "probability": 1
+                    },
+                    "min-max": {
+                      "probability": "1/2"
+                    },
+                    "max-min": {
+                      "probability": "1/2"
+                    },
+                    "min-min": {
+                      "probability": "1/2"
+                    }
+                  },
+                  "name": "yes",
+                  "probability": "#",
+                  "payoff": [
+                    "8000000",
+                    "u(3000000)"
+                  ],
+                  "childNode": {
+                    "computed": {
+                      "max-max": {
+                        "aggregatedPayoff": [
+                          "3000000",
+                          "1603283/2063773"
+                        ],
+                        "probabilityToEnter": 0,
+                        "combinedPayoff": "44209621/51594325",
+                        "payoff": [
+                          "8000000",
+                          "1603283/2063773"
+                        ]
+                      },
+                      "expected-value-maximization": {
+                        "aggregatedPayoff": [
+                          "3000000"
+                        ],
+                        "probabilityToEnter": "1/2",
+                        "payoff": [
+                          "8000000"
+                        ],
+                        "optimal": true
+                      },
+                      "expected-value-minimization": {
+                        "aggregatedPayoff": [
+                          "3000000"
+                        ],
+                        "probabilityToEnter": 0,
+                        "payoff": [
+                          "8000000"
+                        ]
+                      },
+                      "maxi-min": {
+                        "aggregatedPayoff": [
+                          "3000000"
+                        ],
+                        "probabilityToEnter": 0,
+                        "payoff": [
+                          "8000000"
+                        ]
+                      },
+                      "maxi-max": {
+                        "aggregatedPayoff": [
+                          "3000000"
+                        ],
+                        "probabilityToEnter": "1",
+                        "payoff": [
+                          "8000000"
+                        ],
+                        "optimal": true
+                      },
+                      "mini-min": {
+                        "aggregatedPayoff": [
+                          "3000000"
+                        ],
+                        "probabilityToEnter": 0,
+                        "payoff": [
+                          "8000000"
+                        ]
+                      },
+                      "mini-max": {
+                        "aggregatedPayoff": [
+                          "3000000"
+                        ],
+                        "probabilityToEnter": 0,
+                        "payoff": [
+                          "8000000"
+                        ]
+                      },
+                      "min-max": {
+                        "aggregatedPayoff": [
+                          "3000000",
+                          "1603283/2063773"
+                        ],
+                        "probabilityToEnter": 0,
+                        "combinedPayoff": "35954529/51594325",
+                        "payoff": [
+                          "8000000",
+                          "1603283/2063773"
+                        ]
+                      },
+                      "max-min": {
+                        "aggregatedPayoff": [
+                          "3000000",
+                          "1603283/2063773"
+                        ],
+                        "probabilityToEnter": 0,
+                        "combinedPayoff": "-35954529/51594325",
+                        "payoff": [
+                          "8000000",
+                          "1603283/2063773"
+                        ]
+                      },
+                      "min-min": {
+                        "aggregatedPayoff": [
+                          "3000000",
+                          "1603283/2063773"
+                        ],
+                        "probabilityToEnter": 0,
+                        "combinedPayoff": "-44209621/51594325",
+                        "payoff": [
+                          "8000000",
+                          "1603283/2063773"
+                        ]
+                      }
+                    },
+                    "childEdges": [],
+                    "name": "",
+                    "code": "",
+                    "expressionScope": {},
+                    "folded": false,
+                    "location": {
+                      "x": 605,
+                      "y": 20.00000000000003
+                    },
+                    "type": "terminal"
+                  }
+                },
+                {
+                  "computed": {
+                    "payoff": [
+                      "4000000",
+                      "-487202/751019"
+                    ],
+                    "probability": "1/2",
+                    "max-max": {
+                      "probability": "1/2"
+                    },
+                    "expected-value-maximization": {
+                      "probability": "1/2",
+                      "optimal": true
+                    },
+                    "expected-value-minimization": {
+                      "probability": "1/2"
+                    },
+                    "maxi-min": {
+                      "probability": 1
+                    },
+                    "maxi-max": {
+                      "probability": 0,
+                      "optimal": false
+                    },
+                    "mini-min": {
+                      "probability": 1,
+                      "optimal": true
+                    },
+                    "mini-max": {
+                      "probability": 0
+                    },
+                    "min-max": {
+                      "probability": "1/2"
+                    },
+                    "max-min": {
+                      "probability": "1/2"
+                    },
+                    "min-min": {
+                      "probability": "1/2"
+                    }
+                  },
+                  "name": "no",
+                  "probability": "#",
+                  "payoff": [
+                    "4000000",
+                    "u(-1000000)"
+                  ],
+                  "childNode": {
+                    "computed": {
+                      "max-max": {
+                        "aggregatedPayoff": [
+                          "-1000000",
+                          "-487202/751019"
+                        ],
+                        "probabilityToEnter": 0,
+                        "combinedPayoff": "-11429031/18775475",
+                        "payoff": [
+                          "4000000",
+                          "-487202/751019"
+                        ]
+                      },
+                      "expected-value-maximization": {
+                        "aggregatedPayoff": [
+                          "-1000000"
+                        ],
+                        "probabilityToEnter": "1/2",
+                        "payoff": [
+                          "4000000"
+                        ],
+                        "optimal": true
+                      },
+                      "expected-value-minimization": {
+                        "aggregatedPayoff": [
+                          "-1000000"
+                        ],
+                        "probabilityToEnter": 0,
+                        "payoff": [
+                          "4000000"
+                        ]
+                      },
+                      "maxi-min": {
+                        "aggregatedPayoff": [
+                          "-1000000"
+                        ],
+                        "probabilityToEnter": 0,
+                        "payoff": [
+                          "4000000"
+                        ]
+                      },
+                      "maxi-max": {
+                        "aggregatedPayoff": [
+                          "-1000000"
+                        ],
+                        "probabilityToEnter": 0,
+                        "payoff": [
+                          "4000000"
+                        ]
+                      },
+                      "mini-min": {
+                        "aggregatedPayoff": [
+                          "-1000000"
+                        ],
+                        "probabilityToEnter": "1",
+                        "payoff": [
+                          "4000000"
+                        ],
+                        "optimal": true
+                      },
+                      "mini-max": {
+                        "aggregatedPayoff": [
+                          "-1000000"
+                        ],
+                        "probabilityToEnter": 0,
+                        "payoff": [
+                          "4000000"
+                        ]
+                      },
+                      "min-max": {
+                        "aggregatedPayoff": [
+                          "-1000000",
+                          "-487202/751019"
+                        ],
+                        "probabilityToEnter": 0,
+                        "combinedPayoff": "-12931069/18775475",
+                        "payoff": [
+                          "4000000",
+                          "-487202/751019"
+                        ]
+                      },
+                      "max-min": {
+                        "aggregatedPayoff": [
+                          "-1000000",
+                          "-487202/751019"
+                        ],
+                        "probabilityToEnter": 0,
+                        "combinedPayoff": "12931069/18775475",
+                        "payoff": [
+                          "4000000",
+                          "-487202/751019"
+                        ]
+                      },
+                      "min-min": {
+                        "aggregatedPayoff": [
+                          "-1000000",
+                          "-487202/751019"
+                        ],
+                        "probabilityToEnter": 0,
+                        "combinedPayoff": "11429031/18775475",
+                        "payoff": [
+                          "4000000",
+                          "-487202/751019"
+                        ]
+                      }
+                    },
+                    "childEdges": [],
+                    "name": "",
+                    "code": "",
+                    "expressionScope": {},
+                    "folded": false,
+                    "location": {
+                      "x": 605,
+                      "y": 120.00000000000003
+                    },
+                    "type": "terminal"
+                  }
+                }
+              ],
+              "name": "",
+              "code": "",
+              "expressionScope": {},
+              "folded": false,
+              "location": {
+                "x": 410,
+                "y": 70.00000000000003
+              },
+              "type": "chance"
+            }
+          },
+          {
+            "computed": {
+              "payoff": [
+                "0",
+                "0"
+              ],
+              "max-max": {
+                "probability": 0,
+                "optimal": false
+              },
+              "expected-value-maximization": {
+                "probability": 0,
+                "optimal": false
+              },
+              "expected-value-minimization": {
+                "probability": 1,
+                "optimal": true
+              },
+              "maxi-min": {
+                "probability": 1,
+                "optimal": true
+              },
+              "maxi-max": {
+                "probability": 0,
+                "optimal": false
+              },
+              "mini-min": {
+                "probability": 0,
+                "optimal": false
+              },
+              "mini-max": {
+                "probability": 1,
+                "optimal": true
+              },
+              "min-max": {
+                "probability": 0,
+                "optimal": false
+              },
+              "max-min": {
+                "probability": 1,
+                "optimal": true
+              },
+              "min-min": {
+                "probability": 1,
+                "optimal": true
+              }
+            },
+            "name": "don't purchase",
+            "payoff": [
+              0,
+              0
+            ],
+            "childNode": {
+              "computed": {
+                "max-max": {
+                  "aggregatedPayoff": [
+                    "0",
+                    "0"
+                  ],
+                  "probabilityToEnter": 0,
+                  "combinedPayoff": "0",
+                  "payoff": [
+                    "0",
+                    "0"
+                  ]
+                },
+                "expected-value-maximization": {
+                  "aggregatedPayoff": [
+                    "0"
+                  ],
+                  "probabilityToEnter": 0,
+                  "payoff": [
+                    "0"
+                  ]
+                },
+                "expected-value-minimization": {
+                  "aggregatedPayoff": [
+                    "0"
+                  ],
+                  "probabilityToEnter": "1",
+                  "payoff": [
+                    "0"
+                  ],
+                  "optimal": true
+                },
+                "maxi-min": {
+                  "aggregatedPayoff": [
+                    "0"
+                  ],
+                  "probabilityToEnter": "1",
+                  "payoff": [
+                    "0"
+                  ],
+                  "optimal": true
+                },
+                "maxi-max": {
+                  "aggregatedPayoff": [
+                    "0"
+                  ],
+                  "probabilityToEnter": 0,
+                  "payoff": [
+                    "0"
+                  ]
+                },
+                "mini-min": {
+                  "aggregatedPayoff": [
+                    "0"
+                  ],
+                  "probabilityToEnter": 0,
+                  "payoff": [
+                    "0"
+                  ]
+                },
+                "mini-max": {
+                  "aggregatedPayoff": [
+                    "0"
+                  ],
+                  "probabilityToEnter": "1",
+                  "payoff": [
+                    "0"
+                  ],
+                  "optimal": true
+                },
+                "min-max": {
+                  "aggregatedPayoff": [
+                    "0",
+                    "0"
+                  ],
+                  "probabilityToEnter": 0,
+                  "combinedPayoff": "0",
+                  "payoff": [
+                    "0",
+                    "0"
+                  ]
+                },
+                "max-min": {
+                  "aggregatedPayoff": [
+                    "0",
+                    "0"
+                  ],
+                  "probabilityToEnter": "1",
+                  "combinedPayoff": "0",
+                  "payoff": [
+                    "0",
+                    "0"
+                  ],
+                  "optimal": true
+                },
+                "min-min": {
+                  "aggregatedPayoff": [
+                    "0",
+                    "0"
+                  ],
+                  "probabilityToEnter": "1",
+                  "combinedPayoff": "0",
+                  "payoff": [
+                    "0",
+                    "0"
+                  ],
+                  "optimal": true
+                }
+              },
+              "childEdges": [],
+              "name": "",
+              "code": "",
+              "expressionScope": {},
+              "folded": false,
+              "location": {
+                "x": 605,
+                "y": 240.00000000000006
+              },
+              "type": "terminal"
+            }
+          },
+          {
+            "computed": {
+              "payoff": [
+                "0",
+                "0"
+              ],
+              "max-max": {
+                "probability": 1,
+                "optimal": true
+              },
+              "expected-value-maximization": {
+                "probability": 0,
+                "optimal": false
+              },
+              "expected-value-minimization": {
+                "probability": 0,
+                "optimal": false
+              },
+              "maxi-min": {
+                "probability": 1,
+                "optimal": true
+              },
+              "maxi-max": {
+                "probability": 1,
+                "optimal": true
+              },
+              "mini-min": {
+                "probability": 0,
+                "optimal": false
+              },
+              "mini-max": {
+                "probability": 0,
+                "optimal": false
+              },
+              "min-max": {
+                "probability": 1,
+                "optimal": true
+              },
+              "max-min": {
+                "probability": 0,
+                "optimal": false
+              },
+              "min-min": {
+                "probability": 0,
+                "optimal": false
+              }
+            },
+            "name": "wait",
+            "payoff": [
+              0,
+              0
+            ],
+            "childNode": {
+              "computed": {
+                "max-max": {
+                  "childrenPayoff": [
+                    "450000",
+                    "4809849/41275460"
+                  ],
+                  "combinedPayoff": "499558857/4127546000",
+                  "payoff": [
+                    "450000",
+                    "4809849/41275460"
+                  ],
+                  "optimal": true
+                },
+                "expected-value-maximization": {
+                  "childrenPayoff": [
+                    "450000"
+                  ],
+                  "payoff": [
+                    "450000"
+                  ]
+                },
+                "expected-value-minimization": {
+                  "childrenPayoff": [
+                    "450000"
+                  ],
+                  "payoff": [
+                    "450000"
+                  ]
+                },
+                "maxi-min": {
+                  "childrenPayoff": [
+                    "0"
+                  ],
+                  "payoff": [
+                    "0"
+                  ],
+                  "optimal": true
+                },
+                "maxi-max": {
+                  "childrenPayoff": [
+                    "3000000"
+                  ],
+                  "payoff": [
+                    "3000000"
+                  ],
+                  "optimal": true
+                },
+                "mini-min": {
+                  "childrenPayoff": [
+                    "0"
+                  ],
+                  "payoff": [
+                    "0"
+                  ]
+                },
+                "mini-max": {
+                  "childrenPayoff": [
+                    "3000000"
+                  ],
+                  "payoff": [
+                    "3000000"
+                  ]
+                },
+                "min-max": {
+                  "childrenPayoff": [
+                    "450000",
+                    "4809849/41275460"
+                  ],
+                  "combinedPayoff": "462410943/4127546000",
+                  "payoff": [
+                    "450000",
+                    "4809849/41275460"
+                  ],
+                  "optimal": true
+                },
+                "max-min": {
+                  "childrenPayoff": [
+                    "450000",
+                    "4809849/41275460"
+                  ],
+                  "combinedPayoff": "-462410943/4127546000",
+                  "payoff": [
+                    "450000",
+                    "4809849/41275460"
+                  ]
+                },
+                "min-min": {
+                  "childrenPayoff": [
+                    "450000",
+                    "4809849/41275460"
+                  ],
+                  "combinedPayoff": "-499558857/4127546000",
+                  "payoff": [
+                    "450000",
+                    "4809849/41275460"
+                  ]
+                }
+              },
+              "childEdges": [
+                {
+                  "computed": {
+                    "payoff": [
+                      "0",
+                      "0"
+                    ],
+                    "probability": "1/2",
+                    "max-max": {
+                      "probability": "1/2",
+                      "optimal": true
+                    },
+                    "expected-value-maximization": {
+                      "probability": "1/2"
+                    },
+                    "expected-value-minimization": {
+                      "probability": "1/2"
+                    },
+                    "maxi-min": {
+                      "probability": 0.5,
+                      "optimal": true
+                    },
+                    "maxi-max": {
+                      "probability": 1,
+                      "optimal": true
+                    },
+                    "mini-min": {
+                      "probability": 0.5
+                    },
+                    "mini-max": {
+                      "probability": 1
+                    },
+                    "min-max": {
+                      "probability": "1/2",
+                      "optimal": true
+                    },
+                    "max-min": {
+                      "probability": "1/2"
+                    },
+                    "min-min": {
+                      "probability": "1/2"
+                    }
+                  },
+                  "name": "yes",
+                  "probability": "#",
+                  "payoff": [
+                    0,
+                    0
+                  ],
+                  "childNode": {
+                    "computed": {
+                      "max-max": {
+                        "childrenPayoff": [
+                          "900000",
+                          "4809849/20637730"
+                        ],
+                        "combinedPayoff": "499558857/2063773000",
+                        "payoff": [
+                          "900000",
+                          "4809849/20637730"
+                        ],
+                        "optimal": true
+                      },
+                      "expected-value-maximization": {
+                        "childrenPayoff": [
+                          "900000"
+                        ],
+                        "payoff": [
+                          "900000"
+                        ]
+                      },
+                      "expected-value-minimization": {
+                        "childrenPayoff": [
+                          "900000"
+                        ],
+                        "payoff": [
+                          "900000"
+                        ]
+                      },
+                      "maxi-min": {
+                        "childrenPayoff": [
+                          "0"
+                        ],
+                        "payoff": [
+                          "0"
+                        ],
+                        "optimal": true
+                      },
+                      "maxi-max": {
+                        "childrenPayoff": [
+                          "3000000"
+                        ],
+                        "payoff": [
+                          "3000000"
+                        ],
+                        "optimal": true
+                      },
+                      "mini-min": {
+                        "childrenPayoff": [
+                          "0"
+                        ],
+                        "payoff": [
+                          "0"
+                        ]
+                      },
+                      "mini-max": {
+                        "childrenPayoff": [
+                          "3000000"
+                        ],
+                        "payoff": [
+                          "3000000"
+                        ]
+                      },
+                      "min-max": {
+                        "childrenPayoff": [
+                          "900000",
+                          "4809849/20637730"
+                        ],
+                        "combinedPayoff": "462410943/2063773000",
+                        "payoff": [
+                          "900000",
+                          "4809849/20637730"
+                        ],
+                        "optimal": true
+                      },
+                      "max-min": {
+                        "childrenPayoff": [
+                          "900000",
+                          "4809849/20637730"
+                        ],
+                        "combinedPayoff": "-462410943/2063773000",
+                        "payoff": [
+                          "900000",
+                          "4809849/20637730"
+                        ]
+                      },
+                      "min-min": {
+                        "childrenPayoff": [
+                          "900000",
+                          "4809849/20637730"
+                        ],
+                        "combinedPayoff": "-499558857/2063773000",
+                        "payoff": [
+                          "900000",
+                          "4809849/20637730"
+                        ]
+                      }
+                    },
+                    "childEdges": [
+                      {
+                        "computed": {
+                          "payoff": [
+                            "3000000",
+                            "1603283/2063773"
+                          ],
+                          "probability": "3/10",
+                          "max-max": {
+                            "probability": "3/10",
+                            "optimal": true
+                          },
+                          "expected-value-maximization": {
+                            "probability": "3/10"
+                          },
+                          "expected-value-minimization": {
+                            "probability": "3/10"
+                          },
+                          "maxi-min": {
+                            "probability": 0,
+                            "optimal": false
+                          },
+                          "maxi-max": {
+                            "probability": 1,
+                            "optimal": true
+                          },
+                          "mini-min": {
+                            "probability": 0
+                          },
+                          "mini-max": {
+                            "probability": 1
+                          },
+                          "min-max": {
+                            "probability": "3/10",
+                            "optimal": true
+                          },
+                          "max-min": {
+                            "probability": "3/10"
+                          },
+                          "min-min": {
+                            "probability": "3/10"
+                          }
+                        },
+                        "name": "",
+                        "probability": "0.3",
+                        "payoff": [
+                          "3000000",
+                          "u(3000000)"
+                        ],
+                        "childNode": {
+                          "computed": {
+                            "max-max": {
+                              "aggregatedPayoff": [
+                                "3000000",
+                                "1603283/2063773"
+                              ],
+                              "probabilityToEnter": "3/20",
+                              "combinedPayoff": "166519619/206377300",
+                              "payoff": [
+                                "3000000",
+                                "1603283/2063773"
+                              ],
+                              "optimal": true
+                            },
+                            "expected-value-maximization": {
+                              "aggregatedPayoff": [
+                                "3000000"
+                              ],
+                              "probabilityToEnter": 0,
+                              "payoff": [
+                                "3000000"
+                              ]
+                            },
+                            "expected-value-minimization": {
+                              "aggregatedPayoff": [
+                                "3000000"
+                              ],
+                              "probabilityToEnter": 0,
+                              "payoff": [
+                                "3000000"
+                              ]
+                            },
+                            "maxi-min": {
+                              "aggregatedPayoff": [
+                                "3000000"
+                              ],
+                              "probabilityToEnter": 0,
+                              "payoff": [
+                                "3000000"
+                              ]
+                            },
+                            "maxi-max": {
+                              "aggregatedPayoff": [
+                                "3000000"
+                              ],
+                              "probabilityToEnter": "1",
+                              "payoff": [
+                                "3000000"
+                              ],
+                              "optimal": true
+                            },
+                            "mini-min": {
+                              "aggregatedPayoff": [
+                                "3000000"
+                              ],
+                              "probabilityToEnter": 0,
+                              "payoff": [
+                                "3000000"
+                              ]
+                            },
+                            "mini-max": {
+                              "aggregatedPayoff": [
+                                "3000000"
+                              ],
+                              "probabilityToEnter": 0,
+                              "payoff": [
+                                "3000000"
+                              ]
+                            },
+                            "min-max": {
+                              "aggregatedPayoff": [
+                                "3000000",
+                                "1603283/2063773"
+                              ],
+                              "probabilityToEnter": "3/20",
+                              "combinedPayoff": "154136981/206377300",
+                              "payoff": [
+                                "3000000",
+                                "1603283/2063773"
+                              ],
+                              "optimal": true
+                            },
+                            "max-min": {
+                              "aggregatedPayoff": [
+                                "3000000",
+                                "1603283/2063773"
+                              ],
+                              "probabilityToEnter": 0,
+                              "combinedPayoff": "-154136981/206377300",
+                              "payoff": [
+                                "3000000",
+                                "1603283/2063773"
+                              ]
+                            },
+                            "min-min": {
+                              "aggregatedPayoff": [
+                                "3000000",
+                                "1603283/2063773"
+                              ],
+                              "probabilityToEnter": 0,
+                              "combinedPayoff": "-166519619/206377300",
+                              "payoff": [
+                                "3000000",
+                                "1603283/2063773"
+                              ]
+                            }
+                          },
+                          "childEdges": [],
+                          "name": "",
+                          "code": "",
+                          "expressionScope": {},
+                          "folded": false,
+                          "location": {
+                            "x": 605,
+                            "y": 360.00000000000006
+                          },
+                          "type": "terminal"
+                        }
+                      },
+                      {
+                        "computed": {
+                          "payoff": [
+                            "0",
+                            "0"
+                          ],
+                          "probability": "7/10",
+                          "max-max": {
+                            "probability": "7/10",
+                            "optimal": true
+                          },
+                          "expected-value-maximization": {
+                            "probability": "7/10"
+                          },
+                          "expected-value-minimization": {
+                            "probability": "7/10"
+                          },
+                          "maxi-min": {
+                            "probability": 1,
+                            "optimal": true
+                          },
+                          "maxi-max": {
+                            "probability": 0,
+                            "optimal": false
+                          },
+                          "mini-min": {
+                            "probability": 1
+                          },
+                          "mini-max": {
+                            "probability": 0
+                          },
+                          "min-max": {
+                            "probability": "7/10",
+                            "optimal": true
+                          },
+                          "max-min": {
+                            "probability": "7/10"
+                          },
+                          "min-min": {
+                            "probability": "7/10"
+                          }
+                        },
+                        "name": "",
+                        "probability": "#",
+                        "payoff": [
+                          0,
+                          0
+                        ],
+                        "childNode": {
+                          "computed": {
+                            "max-max": {
+                              "aggregatedPayoff": [
+                                "0",
+                                "0"
+                              ],
+                              "probabilityToEnter": "7/20",
+                              "combinedPayoff": "0",
+                              "payoff": [
+                                "0",
+                                "0"
+                              ],
+                              "optimal": true
+                            },
+                            "expected-value-maximization": {
+                              "aggregatedPayoff": [
+                                "0"
+                              ],
+                              "probabilityToEnter": 0,
+                              "payoff": [
+                                "0"
+                              ]
+                            },
+                            "expected-value-minimization": {
+                              "aggregatedPayoff": [
+                                "0"
+                              ],
+                              "probabilityToEnter": 0,
+                              "payoff": [
+                                "0"
+                              ]
+                            },
+                            "maxi-min": {
+                              "aggregatedPayoff": [
+                                "0"
+                              ],
+                              "probabilityToEnter": "1/2",
+                              "payoff": [
+                                "0"
+                              ],
+                              "optimal": true
+                            },
+                            "maxi-max": {
+                              "aggregatedPayoff": [
+                                "0"
+                              ],
+                              "probabilityToEnter": 0,
+                              "payoff": [
+                                "0"
+                              ]
+                            },
+                            "mini-min": {
+                              "aggregatedPayoff": [
+                                "0"
+                              ],
+                              "probabilityToEnter": 0,
+                              "payoff": [
+                                "0"
+                              ]
+                            },
+                            "mini-max": {
+                              "aggregatedPayoff": [
+                                "0"
+                              ],
+                              "probabilityToEnter": 0,
+                              "payoff": [
+                                "0"
+                              ]
+                            },
+                            "min-max": {
+                              "aggregatedPayoff": [
+                                "0",
+                                "0"
+                              ],
+                              "probabilityToEnter": "7/20",
+                              "combinedPayoff": "0",
+                              "payoff": [
+                                "0",
+                                "0"
+                              ],
+                              "optimal": true
+                            },
+                            "max-min": {
+                              "aggregatedPayoff": [
+                                "0",
+                                "0"
+                              ],
+                              "probabilityToEnter": 0,
+                              "combinedPayoff": "0",
+                              "payoff": [
+                                "0",
+                                "0"
+                              ]
+                            },
+                            "min-min": {
+                              "aggregatedPayoff": [
+                                "0",
+                                "0"
+                              ],
+                              "probabilityToEnter": 0,
+                              "combinedPayoff": "0",
+                              "payoff": [
+                                "0",
+                                "0"
+                              ]
+                            }
+                          },
+                          "childEdges": [],
+                          "name": "",
+                          "code": "",
+                          "expressionScope": {},
+                          "folded": false,
+                          "location": {
+                            "x": 605,
+                            "y": 460.00000000000006
+                          },
+                          "type": "terminal"
+                        }
+                      }
+                    ],
+                    "name": "",
+                    "code": "",
+                    "expressionScope": {},
+                    "folded": false,
+                    "location": {
+                      "x": 410,
+                      "y": 410.00000000000006
+                    },
+                    "type": "chance"
+                  }
+                },
+                {
+                  "computed": {
+                    "payoff": [
+                      "0",
+                      "0"
+                    ],
+                    "probability": "1/2",
+                    "max-max": {
+                      "probability": "1/2",
+                      "optimal": true
+                    },
+                    "expected-value-maximization": {
+                      "probability": "1/2"
+                    },
+                    "expected-value-minimization": {
+                      "probability": "1/2"
+                    },
+                    "maxi-min": {
+                      "probability": 0.5,
+                      "optimal": true
+                    },
+                    "maxi-max": {
+                      "probability": 0,
+                      "optimal": false
+                    },
+                    "mini-min": {
+                      "probability": 0.5
+                    },
+                    "mini-max": {
+                      "probability": 0
+                    },
+                    "min-max": {
+                      "probability": "1/2",
+                      "optimal": true
+                    },
+                    "max-min": {
+                      "probability": "1/2"
+                    },
+                    "min-min": {
+                      "probability": "1/2"
+                    }
+                  },
+                  "name": "no",
+                  "probability": "#",
+                  "payoff": [
+                    0,
+                    0
+                  ],
+                  "childNode": {
+                    "computed": {
+                      "max-max": {
+                        "aggregatedPayoff": [
+                          "0",
+                          "0"
+                        ],
+                        "probabilityToEnter": "1/2",
+                        "combinedPayoff": "0",
+                        "payoff": [
+                          "0",
+                          "0"
+                        ],
+                        "optimal": true
+                      },
+                      "expected-value-maximization": {
+                        "aggregatedPayoff": [
+                          "0"
+                        ],
+                        "probabilityToEnter": 0,
+                        "payoff": [
+                          "0"
+                        ]
+                      },
+                      "expected-value-minimization": {
+                        "aggregatedPayoff": [
+                          "0"
+                        ],
+                        "probabilityToEnter": 0,
+                        "payoff": [
+                          "0"
+                        ]
+                      },
+                      "maxi-min": {
+                        "aggregatedPayoff": [
+                          "0"
+                        ],
+                        "probabilityToEnter": "1/2",
+                        "payoff": [
+                          "0"
+                        ],
+                        "optimal": true
+                      },
+                      "maxi-max": {
+                        "aggregatedPayoff": [
+                          "0"
+                        ],
+                        "probabilityToEnter": 0,
+                        "payoff": [
+                          "0"
+                        ]
+                      },
+                      "mini-min": {
+                        "aggregatedPayoff": [
+                          "0"
+                        ],
+                        "probabilityToEnter": 0,
+                        "payoff": [
+                          "0"
+                        ]
+                      },
+                      "mini-max": {
+                        "aggregatedPayoff": [
+                          "0"
+                        ],
+                        "probabilityToEnter": 0,
+                        "payoff": [
+                          "0"
+                        ]
+                      },
+                      "min-max": {
+                        "aggregatedPayoff": [
+                          "0",
+                          "0"
+                        ],
+                        "probabilityToEnter": "1/2",
+                        "combinedPayoff": "0",
+                        "payoff": [
+                          "0",
+                          "0"
+                        ],
+                        "optimal": true
+                      },
+                      "max-min": {
+                        "aggregatedPayoff": [
+                          "0",
+                          "0"
+                        ],
+                        "probabilityToEnter": 0,
+                        "combinedPayoff": "0",
+                        "payoff": [
+                          "0",
+                          "0"
+                        ]
+                      },
+                      "min-min": {
+                        "aggregatedPayoff": [
+                          "0",
+                          "0"
+                        ],
+                        "probabilityToEnter": 0,
+                        "combinedPayoff": "0",
+                        "payoff": [
+                          "0",
+                          "0"
+                        ]
+                      }
+                    },
+                    "childEdges": [],
+                    "name": "",
+                    "code": "",
+                    "expressionScope": {},
+                    "folded": false,
+                    "location": {
+                      "x": 605,
+                      "y": 580.0000000000001
+                    },
+                    "type": "terminal"
+                  }
+                }
+              ],
+              "name": "",
+              "code": "",
+              "expressionScope": {},
+              "folded": false,
+              "location": {
+                "x": 215,
+                "y": 495
+              },
+              "type": "chance"
+            }
+          }
+        ],
+        "name": "",
+        "code": "",
+        "expressionScope": {},
+        "folded": false,
+        "location": {
+          "x": 20,
+          "y": 268.33333333333337
+        },
+        "type": "decision"
+      }
+    ],
+    "texts": [],
+    "payoffNames": [
+      "Profit",
+      "Utility",
+      "Cost",
+      "Effect"
+    ],
+    "defaultCriterion1Weight": "0.00000001",
+    "weightLowerBound": 0,
+    "weightUpperBound": "Infinity"
+  },
+  "sensitivityAnalysis": {}
+}
